@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Java Doctor | Code Fixer & Bug Detector</title>
+    <title>Java Doctor | Java Code Fixer & Bug Detector</title>
 
     <meta name="description" content="Java Doctor is a Python-powered tool for Java code analysis, bug detection and code quality improvement.">
 
@@ -13,6 +13,10 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
 
         body {
@@ -125,6 +129,11 @@
             padding: 28px;
             border: 1px solid #293b52;
             border-radius: 12px;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
         }
 
         .card h3 {
@@ -200,145 +209,169 @@
 
 <main>
 
-<section class="hero" id="home">
+    <!-- HOME SECTION -->
+    <section class="hero" id="home">
 
-    <div class="tag">PYTHON-POWERED JAVA CODE ANALYSIS</div>
+        <div class="tag">PYTHON-POWERED JAVA CODE ANALYSIS</div>
 
-    <h1>Java <span>Doctor</span></h1>
+        <h1>Java <span>Doctor</span></h1>
 
-    <h2>Java Code Fixer & Bug Detector</h2>
+        <h2>Java Code Fixer & Bug Detector</h2>
 
-    <p>
-        An automated tool designed to analyze Java source code,
-        identify potential bugs, diagnose coding issues and
-        help developers improve code quality.
-    </p>
-
-    <div class="buttons">
-
-        <!-- Replace the URL below with your actual repository URL -->
-        <a class="btn primary"
-           href="https://github.com/YOUR-USERNAME/YOUR-REPOSITORY"
-           target="_blank" rel="noopener noreferrer">
-            View Source Code →
-        </a>
-
-        <a class="btn secondary" href="#features">
-            Explore Features
-        </a>
-
-    </div>
-
-</section>
-
-<section id="features">
-
-    <h2 class="section-title">What Java Doctor Does</h2>
-
-    <div class="features">
-
-        <div class="card">
-            <h3>🔍 Bug Detection</h3>
-            <p>
-                Analyze Java source code and identify
-                potential programming errors.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>🛠️ Code Fixing</h3>
-            <p>
-                Help diagnose coding problems and
-                provide fixes where supported.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>⚡ Code Analysis</h3>
-            <p>
-                Examine source code and help improve
-                its quality and reliability.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>🧪 Testing</h3>
-            <p>
-                Includes automated tests to help
-                verify project functionality.
-            </p>
-        </div>
-
-    </div>
-
-</section>
-
-<section id="about">
-
-    <h2 class="section-title">About The Project</h2>
-
-    <div class="about">
         <p>
-            Java Doctor is a Python-powered software development
-            project focused on Java source code analysis,
-            automated bug detection and code quality improvement.
+            An automated tool designed to analyze Java source code,
+            identify potential bugs, diagnose coding issues and
+            help developers improve code quality.
         </p>
 
-        <p style="margin-top: 18px;">
-            Built to make debugging easier and help developers
-            identify potential issues in Java programs.
-        </p>
+        <div class="buttons">
 
-        <h3 style="margin-top: 25px; color: #38bdf8;">
-            Detect. Diagnose. Fix.
-        </h3>
-    </div>
+            <a class="btn primary"
+               href="https://github.com/superabhinav524-spec/Java-doctor-bug-fix"
+               target="_blank"
+               rel="noopener noreferrer">
+                View Source Code →
+            </a>
 
-</section>
+            <a class="btn secondary" href="#features">
+                Explore Features
+            </a>
 
-<section id="install">
+        </div>
 
-    <h2 class="section-title">Installation</h2>
+    </section>
 
-    <div class="install">
 
-        <p>Clone the project repository:</p>
+    <!-- FEATURES SECTION -->
+    <section id="features">
 
-        <pre>git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git</pre>
+        <h2 class="section-title">What Java Doctor Does</h2>
 
-        <p style="margin-top: 18px;">
-            Enter the project directory:
-        </p>
+        <div class="features">
 
-        <pre>cd YOUR-REPOSITORY</pre>
+            <div class="card">
+                <h3>🔍 Bug Detection</h3>
+                <p>
+                    Analyze Java source code and identify
+                    potential programming errors.
+                </p>
+            </div>
 
-        <p style="margin-top: 18px;">
-            Install the Python package:
-        </p>
+            <div class="card">
+                <h3>🛠️ Code Fixing</h3>
+                <p>
+                    Help diagnose coding problems and
+                    provide fixes where supported.
+                </p>
+            </div>
 
-        <pre>pip install .</pre>
+            <div class="card">
+                <h3>⚡ Code Analysis</h3>
+                <p>
+                    Examine source code and help improve
+                    its quality and reliability.
+                </p>
+            </div>
 
-        <p style="margin-top: 18px;">
-            Run Java Doctor using its command-line entry point:
-        </p>
+            <div class="card">
+                <h3>🧪 Automated Testing</h3>
+                <p>
+                    Includes automated tests to help
+                    verify project functionality.
+                </p>
+            </div>
 
-        <pre>javadoctor --help</pre>
+        </div>
 
-        <p style="margin-top: 15px; color: #94a3b8;">
-            Note: Available commands depend on the actual
-            implementation of your project.
-        </p>
+    </section>
 
-    </div>
 
-</section>
+    <!-- ABOUT SECTION -->
+    <section id="about">
+
+        <h2 class="section-title">About The Project</h2>
+
+        <div class="about">
+
+            <p>
+                Java Doctor is a Python-powered software development
+                project focused on Java source code analysis,
+                automated bug detection and code quality improvement.
+            </p>
+
+            <p style="margin-top: 18px;">
+                Built to make debugging easier and help developers
+                identify potential issues in Java programs.
+            </p>
+
+            <h3 style="margin-top: 25px; color: #38bdf8;">
+                Detect. Diagnose. Fix.
+            </h3>
+
+        </div>
+
+    </section>
+
+
+    <!-- INSTALLATION SECTION -->
+    <section id="install">
+
+        <h2 class="section-title">Installation Guide</h2>
+
+        <div class="install">
+
+            <p>Step 1: Clone the GitHub repository</p>
+
+            <pre>git clone https://github.com/superabhinav524-spec/Java-doctor-bug-fix.git</pre>
+
+            <p style="margin-top: 18px;">
+                Step 2: Enter the project directory
+            </p>
+
+            <pre>cd Java-doctor-bug-fix</pre>
+
+            <p style="margin-top: 18px;">
+                Step 3: Install the Python package
+            </p>
+
+            <pre>pip install .</pre>
+
+            <p style="margin-top: 18px;">
+                Step 4: Check available commands
+            </p>
+
+            <pre>javadoctor --help</pre>
+
+            <p style="margin-top: 15px; color: #94a3b8;">
+                Note: Available commands depend on the
+                actual implementation of Java Doctor.
+            </p>
+
+        </div>
+
+    </section>
 
 </main>
 
+
+<!-- FOOTER -->
 <footer>
+
     <p>🩺 Java Doctor | Java Code Fixer & Bug Detector</p>
+
     <p>Detect. Diagnose. Fix.</p>
+
     <p>© 2026 Java Doctor Project</p>
+
+    <p style="margin-top: 10px;">
+        <a href="https://github.com/superabhinav524-spec/Java-doctor-bug-fix"
+           target="_blank"
+           rel="noopener noreferrer"
+           style="color: #38bdf8;">
+            GitHub Repository
+        </a>
+    </p>
+
 </footer>
 
 </body>
