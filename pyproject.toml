@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "javadoctor"
+version = "1.0.0"
+description = "Automated bug hunter and precision fixer for Java source code"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+    { name = "JavaDoctor Team" }
+]
+keywords = ["java", "linter", "static-analysis", "bug-fixer", "ast", "code-quality"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Java",
+    "Topic :: Software Development :: Quality Assurance",
+    "Topic :: Software Development :: Compilers"
+]
+
+[project.scripts]
+javadoctor = "javadoctor.cli.main:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["javadoctor*"]
+
+[tool.vercel]
+entrypoint = "main:app"
