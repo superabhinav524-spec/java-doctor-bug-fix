@@ -1,0 +1,2 @@
+# JavaDoctor requires only the Python standard library.
+# This file is provided for Vercel deployment compatibility.
